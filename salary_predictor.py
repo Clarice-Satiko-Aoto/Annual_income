@@ -1,11 +1,11 @@
 import streamlit as st
 import pandas as pd
 import pickle
+import sklearn
 
 
 
-
-st.header("Estudo do salário anual dos profissionais de uma multinacional")
+st.header("Study of professionals' annual salary for a multinational company.")
 
 
 
@@ -44,15 +44,17 @@ dados = pd.DataFrame(lista)
 
 
 #Botão para predição dos dados:
-if st.button('classificar'):
+if st.button('Annual Salary'):
     # predição dos novos dados
     loaded_model = pickle.load(open('LR_model_OHE_MaxAbsScaler_13_05.pkl', 'rb'))
     #print(loaded_model)
     y_pred = loaded_model.predict(dados)
     #print(y_pred)
 
+
+
     if y_pred == ' <=50K':
-        st.write('O salário anual é igual ou inferior a U$50k')
+        st.write('The annual income is less than U$50k')
     else:
-        st.write('O salário anual é maior que U$50k')
+        st.write('The annual income is more than U$50k')
     
