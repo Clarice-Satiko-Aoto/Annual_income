@@ -15,5 +15,5 @@
 2. perfil das mulheres
 ![Mulheres](https://user-images.githubusercontent.com/83498839/168403714-501b8585-5942-45ad-8a6b-48b7d0566ee2.png)
 
-** Link do Streamlit**:
+**Link do Streamlit**:
 https://share.streamlit.io/clarice-satiko-aoto/annual_income/main/salary_predictor.py
