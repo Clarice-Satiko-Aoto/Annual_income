@@ -8,12 +8,12 @@
 
 **Objetivo do projeto** : Contratar os melhores candidatos e reestruturar o plano de carreira da empresa com auxílio do modelo de inteligência artificial, no prazo de seis meses para que possa realizar projetos em escala mundial.
 
-**Alguns insights:
+**Alguns insights**:
 1. persona geral:
 ![persona _=50k](https://user-images.githubusercontent.com/83498839/168403708-9cca347a-ab69-443a-ac56-082bdef3e4d7.png)
 
 2. perfil das mulheres
 ![Mulheres](https://user-images.githubusercontent.com/83498839/168403714-501b8585-5942-45ad-8a6b-48b7d0566ee2.png)
 
-** Link do Streamlit:
+** Link do Streamlit**:
 https://share.streamlit.io/clarice-satiko-aoto/annual_income/main/salary_predictor.py
