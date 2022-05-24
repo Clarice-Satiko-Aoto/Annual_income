@@ -4,7 +4,6 @@ import pickle
 import sklearn
 import PIL
 from PIL import Image
-from st_aggrid import AgGrid
 
 
 st.write("**Project Goal**: A multinational had requested a study on the annual income for prospective \
