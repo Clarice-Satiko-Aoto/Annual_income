@@ -67,4 +67,29 @@ if st.button('Annual Salary'):
         
 barra = Image.open('./image/barVertical.png')
 st.image(barra)
+
+
+st.subheader("Exploratory data analysis:")
+
+
+
+df= pd.read_csv("./dataset/salary_f1.csv")
+#print(df)
+
+#counts:
+work= df.work_class.value_counts()
+country = df.native_country.value_counts()
+education= df.education.value_counts(ascending=True, sort=False )
+hour = df.hours_per_week.mean()
+
+st.bar_chart(work)
+st.bar_chart(country)
+st.bar_chart(education)
+
+
+
+
+with st.expander("Notes:"):
+     st.write(" We can see that Americans with HS graduate degrees are in the majority and work on average ", round(hour,2),   "hours per week.")
+
     
