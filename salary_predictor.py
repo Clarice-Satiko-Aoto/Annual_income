@@ -2,10 +2,18 @@ import streamlit as st
 import pandas as pd
 import pickle
 import sklearn
+import PIL
+from PIL import Image
+from st_aggrid import AgGrid
 
 
+st.write("**Project Goal**: A multinational had requested a study on the annual income for prospective \
+    employees and was provided a dataset  extracted by Barry Becker from the 1994 US Census Database.\
+    The dataset consists of anonymous information such as occupation, age, capital gain,  education and more.")
 
-st.header("Study of professionals' annual salary for a multinational company.")
+
+st.write("**Study of professionals' annual income for a multinational company.**")
+st.write("Please, input the data below:")
 
 
 
@@ -57,4 +65,7 @@ if st.button('Annual Salary'):
         st.write('The annual income is less than U$50k')
     else:
         st.write('The annual income is more than U$50k')
+        
+barra = Image.open('./image/barVertical.png')
+st.image(barra)
     
